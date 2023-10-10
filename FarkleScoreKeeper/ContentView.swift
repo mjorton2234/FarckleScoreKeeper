@@ -5,7 +5,7 @@
 //  Created by MJ Orton on 8/6/23.
 //
 import SwiftUI
-
+// hi
 struct ContentView: View {
     @State private var playerName = ""
     @State private var isAddingPlayers = false
