@@ -211,7 +211,7 @@ struct ContentView: View {
     func save() {
         guard let intScore = Int(score) else { return }
         guard let selectedPlayerIndex else { return }
-        updatePlayerScore(selectedPlayerIndex: selectedPlayerIndex, newScore: intScore)
+//        updatePlayerScore(selectedPlayerIndex: selectedPlayerIndex, newScore: intScore)
         score = ""
     }
     
@@ -233,17 +233,17 @@ struct ContentView: View {
         
     }
     
-    func updatePlayerScore(selectedPlayerIndex: Int, newScore: Int) {
-        
-            playersInfo[selectedPlayerIndex].score += newScore
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1){
-                // Check if the player has reached 10,000 points
-                if playersInfo[selectedPlayerIndex].score >= 10000 {
-                    gameWinner = playerName
-                    showGameWinnerAlert = true
-                }
-            }
-    }
+//    func updatePlayerScore(selectedPlayerIndex: Int, newScore: Int) {
+//        
+//            playersInfo[selectedPlayerIndex].score += newScore
+//            DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+//                // Check if the player has reached 10,000 points
+//                if playersInfo[selectedPlayerIndex].score >= 10000 {
+//                    gameWinner = playerName
+//                    showGameWinnerAlert = true
+//                }
+//            }
+//    }
     
 }
 
