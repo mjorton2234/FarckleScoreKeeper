@@ -4,6 +4,7 @@
 //
 //  Created by MJ Orton on 8/6/23.
 //
+
 import SwiftUI
 
 struct ContentView: View {
@@ -52,9 +53,9 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.all) // Extend the gradient to the edges of the view
 //            NavigationView {
                 VStack {
-                    Spacer()
+//                    Spacer()
                     Text("Farkle Score Keeper")
-                        .font(.title)
+                        .font(.system(size: 40))
                         .bold()
                     Spacer()
                     NavigationView {
@@ -76,6 +77,7 @@ struct ContentView: View {
                                             }
                                         }
                                     })
+                                    .padding(.top, -15)
                                     .toolbar {
                                         ToolbarItemGroup(placement: .keyboard) {
                                             HStack {
